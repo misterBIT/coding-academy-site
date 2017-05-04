@@ -1,0 +1,250 @@
+#primary-menu > ul {
+    border: none !important;
+}
+
+.si-meetup:hover,
+.si-colored.si-meetup { background-color: #ed1c40 !important; }
+.si-text-color.si-meetup i { color: #ed1c40; }
+
+.clients-grid li a h5,
+.clients-grid li a h6 { 
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.my-list li {
+    float: right;
+    list-style: none;
+    width: 100%;
+}
+
+.my-list li p {
+    width: 90%;
+    transition: text-shadow 300ms ease;
+}
+
+.my-list li p:hover {
+    text-shadow: 1px 1px 1px rgba(235, 184, 17, 0.8);
+}
+
+.my-list li h4 {
+    margin-bottom: 5px;
+    transition: text-shadow 300ms ease;
+}
+
+.my-list li h4:hover {
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
+
+.my-list.refs li {
+    margin-bottom: 25px;
+}
+
+.faq-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq-list-item {
+    width: 100%;
+    padding-left: 25px;
+}
+
+@media (min-width: 527px) {
+    .my-list li {
+        width: 50%;
+    }
+
+    .faq-list {
+        flex-direction: row;
+    }
+
+    .faq-list-item {
+        width: 50%;
+    }
+}
+
+.content-wrap {
+    padding: 0;
+}
+
+.content-wrap > :nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.promo h3 {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Secular One', sans-serif;
+}
+
+#gotoTop:hover,
+.button {
+    background-color: #ebb811;
+}
+
+#primary-menu ul li:hover > a,
+#primary-menu ul li.current > a,
+.icon-check,
+h3 > span:not(.nocolor),
+h4 > span:not(.nocolor),
+.faq-list-item span:not(.nocolor) {
+    color: #ebb811;
+}
+
+/* WHY THE HELL DID THEY SET THE WIDTH TO 470?!? HERE'S THE FIX */
+
+@media (max-width: 767px) /*and (min-width: 480px)*/ {
+    .container {
+        width: 100% !important;
+    }
+}
+
+#header.full-header .container {
+    width: 100% !important;
+}
+
+/* END OF FIX */
+
+#contact.promo-full a.button,
+#syllabus.promo-full a.button
+ {
+    position: relative !important;
+    margin: auto !important;
+}
+
+#testimonials.promo-full a.button
+ {
+    position: relative !important;
+    margin: 20px 0 0 0 !important;
+}
+
+#nextCourses h3 span {
+    transition: color 300ms linear;
+}
+
+#nextCourses h3:hover span {
+    color: #858585;
+}
+
+::selection {
+    background: #ebb811;
+    color: #FFF;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #ebb811;
+    color: #FFF;
+    text-shadow: none;
+}
+
+.owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #ebb811 !important;
+}
+
+.testi-meta:before {
+    content: none;
+}
+
+.testimonial video {
+    width: 100%;
+}
+
+.entry-title h4 a {
+    font-weight: initial !important;
+}
+
+.widget > h4 {
+    font-weight: 300;
+}
+
+#principals:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('images/others/training.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.tabbed {
+    width: 2em;
+}
+
+.faqs-index {
+    padding: 0 30px;
+    list-style-image: url('images/icons/tools/cog.png');
+}
+
+.faqs-index a {
+    color: #ebb811;
+}
+
+.faqs-index a:hover {
+    color: #555;
+}
+
+#acceptance ul {
+    padding-right: 1em;
+}
+
+#mySlider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    #header.transparent-header + #mySlider {
+        top: -100px;
+        margin-bottom: -100px;
+    }
+}
+
+.portSize {
+    width: 100%;
+    height: auto;
+}
+
+#program:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('images/others/uni.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.marginTop {
+    margin-top: 50px;
+}
+
+#whatItTakes:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('images/others/ninja.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
