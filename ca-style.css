@@ -248,3 +248,14 @@ h4 > span:not(.nocolor),
     background-position: 50% 0;
     background-size: cover;
 }
+
+p {
+    font-size: 17px;
+    /*font-weight: 600;*/
+
+
+}
+
+h5 {
+    font-size: 20px;
+}
