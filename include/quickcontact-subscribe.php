@@ -5,7 +5,7 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $apiKey = 'c965cde35128cf4ccda7fcd261abf69d-us1'; // Your MailChimp API Key
 $listId = 'd69738bf6a'; // Your MailChimp List ID
 
-$toemails = array();
+// $toemails = array();
 
 $toemails[] = array(
 				'email' => 'admin@misterbit.co.il', // Your Email Address
@@ -13,7 +13,7 @@ $toemails[] = array(
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Thanks! <strong> Got it!</strong> we will get back to you shortly';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
@@ -21,6 +21,7 @@ $recaptcha_secret = ''; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
+
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
@@ -41,7 +42,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 		if( $botcheck == '' ) {
 
-			$mail->$CharSet = 'UTF-8';
+			$mail->CharSet = 'UTF-8';
 			$mail->SetFrom( $email , $name );
 			$mail->AddReplyTo( $email , $name );
 			foreach( $toemails as $toemail ) {
@@ -80,7 +81,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$mail->MsgHTML( $body );
 			$sendEmail = $mail->Send();
 
-			if( $sendEmail == true ):
+			if( $sendEmail):
 
 				$datacenter = explode( '-', $apiKey );
 				$submit_url = "https://" . $datacenter[1] . ".api.mailchimp.com/3.0/lists/" . $listId . "/members/" ;
