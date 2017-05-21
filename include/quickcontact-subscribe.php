@@ -10,6 +10,10 @@ $listId = 'd69738bf6a'; // Your MailChimp List ID
 $toemails[] = array(
 				'email' => 'roni@misterbit.co.il', // Your Email Address
 				'name' => 'Roni' // Your Name
+			// ),
+			// array(
+			// 	'email' => 'or@misterbit.co.il', // Your Email Address
+			// 	'name' => 'Or' // Your Name
 			);
 
 // Form Processing Messages
