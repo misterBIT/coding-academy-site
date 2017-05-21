@@ -5,7 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="MisterBit" />
 
-	<!--<script>
+	<script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
@@ -21,7 +21,7 @@
         ga('create', 'UA-73447227-1', 'auto');
         ga('send', 'pageview');
 
-    </script>-->
+    </script>
 
 	<!-- Stylesheets
 	============================================= -->
@@ -133,22 +133,32 @@
 		<section id="content">
 
 			<div class="content-wrap">
-
+<!--class="promo promo-full"-->
 			<!-- המחזורים הקרובים -->
 				<div id="nextCourses" class="promo promo-full">
 					<div class="container clearfix">
+						<div class="col_one_third nobottommargin flex">
 						<h2>המחזורים הקרובים:</h2>
 						<h3>23 באפריל 2017: <span>מלא</span></h3>
 						<h3>15 באוקטובר 2017: <span>ההרשמה החלה!</span></h3>
-						<a href="nextCourse.html" class="button button-xlarge button-rounded"> לפרטים נוספים </a>
-					</div>
-				</div>
+						<p>כמו שנגרות לומדים בנגריה, תכנות לומדים בבית תכנה. קודינג אקדמי מבית מיסטרביט היא תכנית יחודית במתכונת של Coding Bootcamp 
+							חוויה בלתי נשכחת - 12 שבועות אינטנסיביים של לימודי תכנות ואחריהם השתלבות מהירה בתעשיית ההייטק
+						</p>
+						<!--<a href="nextCourse.html" class="button button-xlarge button-rounded" style= "margin-top: 115px;"> לפרטים נוספים </a>-->
+						<a href="nextCourse.html" class="btn btn-warning btn-lg justify" > לפרטים נוספים </a>
+
+						</div>
+					
+				
 
 			<!-- סרטון הקורס -->
-				<div class="promo promo-full">
-					<div class="container clearfix">
+				<!--<div class=" promo promo-full" style="width: 48%;">-->
+					<!--<div class="container clearfix">-->
+						<div class="col_two_third col_last nobottommargin rightborder">
+							<h2>אודות הקורס!</h2>
 						<iframe src="https://www.youtube.com/embed/VvU27gvAK40"
 								frameborder="0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 				
@@ -412,6 +422,7 @@
 
 								<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="שם מלא" />
 								<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder='כתובת דוא"ל' />
+								<input type="text" class="required sm-form-control phone input-block-level" id="quick-contact-form-phone" name="quick-contact-form-phone" value="" placeholder='טלפון' />
 								<textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="נשמח לשמוע מכם"></textarea>
 								<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
 								<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-rounded nomargin" value="submit" onclick="ga('send', 'event', 'Contact', 'Send', 'Form');"> שלח!</button>

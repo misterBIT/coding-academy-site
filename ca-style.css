@@ -40,6 +40,40 @@
     margin-bottom: 25px;
 }
 
+.my-list2 li {
+    /*float: right;*/
+    /*list-style: square;*/
+    width: 100%;
+    margin-bottom: 21px;
+    font-size: 17px;
+}
+
+.my-list2 li p {
+    width: 90%;
+    transition: text-shadow 300ms ease;
+}
+
+.my-list2 li p:hover {
+    text-shadow: 1px 1px 1px rgba(235, 184, 17, 0.8);
+}
+
+.my-list2 li h4 {
+    margin-bottom: 5px;
+    transition: text-shadow 300ms ease;
+}
+
+.my-list2 li h4:hover {
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
+
+.my-list2.refs li {
+    margin-bottom: 25px;
+}
+
+
+.list-style {
+    list-style: circle;
+}
 .faq-list {
     display: flex;
     flex-wrap: wrap;
@@ -258,4 +292,51 @@ p {
 
 h5 {
     font-size: 20px;
+}
+
+#whatItAbout:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-color: #ebb811;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.section2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.justify {
+   
+   align-self: center;
+}
+
+.flex{
+
+ display: flex;
+ flex-direction: column;
+}
+
+.rightborder{
+    border-right: 2px solid #d3d3d3;
+    padding-right: 50px;
+}
+
+@media (max-width: 768px){
+
+    .rightborder{
+    border: none;
+}
 }

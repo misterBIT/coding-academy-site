@@ -30,6 +30,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$name = $_POST['quick-contact-form-name'];
 		$email = $_POST['quick-contact-form-email'];
 		$subscribe_email = $email;
+		$phone = $_POST['quick-contact-form-phone'];
 		$message = $_POST['quick-contact-form-message'];
 
 		$subject = 'New Message From Quick Contact Form';
@@ -52,11 +53,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 			$name = isset($name) ? "Name: $name<br><br>" : '';
 			$email = isset($email) ? "Email: $email<br><br>" : '';
+			$phone = isset($phone) ? "Phone: $phone<br><br>" : '';
 			$message = isset($message) ? "Message: $message<br><br>" : '';
 
 			$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 
-			$body = "$name $email $message $referrer";
+			$body = "$name $email $phone $message $referrer";
 
 			// Runs only when reCaptcha is present in the Contact Form
 			if( isset( $_POST['g-recaptcha-response'] ) ) {
