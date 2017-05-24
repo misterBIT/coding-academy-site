@@ -8,7 +8,7 @@ $listId = 'd69738bf6a'; // Your MailChimp List ID
 // $toemails = array();
 
 $toemails[] = array(
-				'email' => 'admin@misterbit.co.il', // Your Email Address
+				'email' => 'roni@misterbit.co.il', // Your Email Address
 				'name' => 'Roni' // Your Name
 			);
 
@@ -33,7 +33,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$phone = $_POST['quick-contact-form-phone'];
 		$message = $_POST['quick-contact-form-message'];
 
-		$subject = 'New Message From Quick Contact Form';
+		$subject = 'הודעה חדשה מקודינג אקדמי';
 
 		$botcheck = $_POST['quick-contact-form-botcheck'];
 

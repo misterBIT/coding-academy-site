@@ -30,7 +30,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$subject = isset( $_POST['template-contactform-subject'] ) ? $_POST['template-contactform-subject'] : '';
 		$message = isset( $_POST['template-contactform-message'] ) ? $_POST['template-contactform-message'] : '';
 
-		$subject = isset($subject) ? $subject : 'New Message From Contact Form';
+		$subject = isset($subject) ? $subject : 'הודעה חדשה מקודינג אקדמי';
 
 		$botcheck = $_POST['template-contactform-botcheck'];
 
