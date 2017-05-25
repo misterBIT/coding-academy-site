@@ -16,7 +16,7 @@ $toemails[] = array(
 $message_success = 'Thanks! <strong> Got it!</strong> we will get back to you shortly';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = ''; // Your reCaptcha Secret
+$recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
