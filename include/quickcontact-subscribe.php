@@ -10,13 +10,17 @@ $listId = 'd69738bf6a'; // Your MailChimp List ID
 $toemails[] = array(
 				'email' => 'roni@misterbit.co.il', // Your Email Address
 				'name' => 'Roni' // Your Name
+			// ),
+			// array(
+			// 	'email' => 'or@misterbit.co.il', // Your Email Address
+			// 	'name' => 'Or' // Your Name
 			);
 
 // Form Processing Messages
 $message_success = 'Thanks! <strong> Got it!</strong> we will get back to you shortly';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptcha Secret
+$recaptcha_secret = ''; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
@@ -33,7 +37,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$phone = $_POST['quick-contact-form-phone'];
 		$message = $_POST['quick-contact-form-message'];
 
-		$subject = 'הודעה חדשה מקודינג אקדמי';
+		$subject = 'הודעה חדשה מאתר קודינג אקדמי';
 
 		$botcheck = $_POST['quick-contact-form-botcheck'];
 
