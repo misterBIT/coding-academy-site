@@ -16,7 +16,7 @@ $toemails[] = array(
 $message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = ''; // Your reCaptcha Secret
+$recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
@@ -34,7 +34,9 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$subject = $_POST['template-contactform-subject'];
 		$message = $_POST['template-contactform-message'];
 
-		$subject = isset($subject) ? $subject : 'הודעה חדשה מאתר קודינג אקדמי';
+
+		$subject = isset($subject) ? $subject : 'הודעה חדשה מקודינג אקדמי';
+
 
 		$botcheck = $_POST['template-contactform-botcheck'];
 

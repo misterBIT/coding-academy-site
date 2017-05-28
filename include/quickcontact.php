@@ -4,7 +4,9 @@ require_once('phpmailer/PHPMailerAutoload.php');
 
 $toemails = array();
 
-$toemails[] =  array(
+
+$toemails[] = array(
+
 				'email' => 'roni@misterbit.co.il', // Your Email Address
 				'name' => 'Roni' // Your Name
 
@@ -18,7 +20,7 @@ $toemails[] =  array(
 $message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = ''; // Your reCaptcha Secret
+$recaptcha_secret = '6Ldm1yIUAAAAAAI1sPRmKtcocv9Fj2wN_C44Sgum'; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
